@@ -13,7 +13,7 @@ const raleway = Raleway({
 });
 
 export const metadata = {
-  title: "Elegance Timepieces | Luxury Ladies Watches",
+  title: "Ovique Timepieces | Luxury Ladies Watches",
   description: "Discover our exquisite collection of handcrafted luxury timepieces for the modern woman",
 };
 

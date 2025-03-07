@@ -44,7 +44,7 @@ export default function Home() {
             href="#collection" 
             className="inline-block px-8 py-3 border border-accent text-tertiary hover:bg-accent hover:text-light transition-colors duration-300"
           >
-            Explore Collection
+            Contact Us
           </Link>
         </div>
       </section>
@@ -61,17 +61,17 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "The Duchess",
+                name: "Design in Motion",
                 description: "18K gold with diamond bezel",
                 image: "/rolex_watch.png"
               },
               {
-                name: "Celestial Blue",
+                name: "Our Catalog",
                 description: "Sapphire crystal with mother of pearl dial",
                 image: "/watches_plus.jpg"
               },
               {
-                name: "Rose Petal",
+                name: "Inner Workings",
                 description: "Rose gold with chronograph movement",
                 image: "/works.jpg"
               }
