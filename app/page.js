@@ -221,6 +221,103 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-tertiary">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-3xl md:text-4xl mb-4 text-dark">Contact Us</h2>
+            <div className="w-24 h-[1px] bg-accent mx-auto mb-6"></div>
+            <p className="max-w-2xl mx-auto text-primary">Reach out to us for inquiries, appointments, or personalized service</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <form className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-primary mb-2">Your Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    className="w-full px-4 py-3 border border-secondary/50 focus:border-accent focus:outline-none bg-light"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-primary mb-2">Email Address</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    className="w-full px-4 py-3 border border-secondary/50 focus:border-accent focus:outline-none bg-light"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-primary mb-2">Your Message</label>
+                  <textarea 
+                    id="message" 
+                    rows="5" 
+                    className="w-full px-4 py-3 border border-secondary/50 focus:border-accent focus:outline-none bg-light"
+                    placeholder="How can we help you?"
+                  ></textarea>
+                </div>
+                <button 
+                  type="submit" 
+                  className="w-full py-3 bg-accent text-light hover:bg-accent/90 transition-colors"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+            
+            <div className="bg-light p-8 shadow-sm">
+              <h3 className="font-display text-2xl mb-6 text-dark">Get in Touch</h3>
+              <p className="text-primary mb-8">
+                We're available to answer your questions and provide personalized service. 
+                Reach out to us through any of the following channels:
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-tertiary flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-accent">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-dark font-medium mb-1">Phone</h4>
+                    <a href="tel:+1234567890" className="text-primary hover:text-accent">+1 (234) 567-890</a>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-tertiary flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-accent">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-dark font-medium mb-1">Email</h4>
+                    <a href="mailto:info@oviquetimepieces.com" className="text-primary hover:text-accent">info@oviquetimepieces.com</a>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full bg-tertiary flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="text-accent" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-dark font-medium mb-1">WhatsApp</h4>
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent">Message us on WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer Section */}
       <footer className="bg-dark text-light py-16">
         <div className="container mx-auto px-4">
